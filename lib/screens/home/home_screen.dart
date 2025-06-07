@@ -1,5 +1,6 @@
 // Created by: Adwaith Jayasankar, Created at: 07-06-2025 01:16
 import 'package:cine_mate/screens/group/groups_screen.dart';
+import 'package:cine_mate/screens/home/home_view.dart';
 import 'package:cine_mate/screens/movie/movies_screen.dart';
 import 'package:cine_mate/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
   final List<Widget> _screens = const [
-    HomeScreen(),
+    HomeView(),
     MoviesScreen(),
     GroupsScreen(),
     ProfileScreen(),
