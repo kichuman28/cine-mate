@@ -32,7 +32,6 @@ class CineMateApp extends StatelessWidget {
         '/signup': (context) => const SignupScreen(),
         '/home': (context) => const HomeScreen(),
       },
-      home: const HomeScreen(), //Replace this with auth check later on
     );
   }
 }
