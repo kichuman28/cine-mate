@@ -1,8 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import 'app.dart';
+import 'package:cine_mate/app.dart';
 import 'package:cine_mate/providers/auth_provider.dart';
 import 'package:cine_mate/providers/movie_provider.dart';
 import 'package:cine_mate/providers/group_provider.dart';
