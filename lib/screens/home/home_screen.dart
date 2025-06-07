@@ -1,9 +1,8 @@
 // Created by: Adwaith Jayasankar, Created at: 07-06-2025 01:16
+import 'package:cine_mate/screens/group/groups_screen.dart';
+import 'package:cine_mate/screens/movie/movies_screen.dart';
+import 'package:cine_mate/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:cine_mate/views/movie/movies_view.dart';
-import 'package:cine_mate/views/group/groups_view.dart';
-import 'package:cine_mate/views/profile/profile_view.dart';
-import 'package:cine_mate/views/home/home_view.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -16,10 +15,10 @@ class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
   final List<Widget> _screens = const [
-    HomeView(),
-    MoviesView(),
-    GroupsView(),
-    ProfileView(),
+    HomeScreen(),
+    MoviesScreen(),
+    GroupsScreen(),
+    ProfileScreen(),
   ];
 
   void _onItemTapped(int index) {

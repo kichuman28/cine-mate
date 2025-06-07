@@ -1,14 +1,14 @@
 // Created by: Adwaith Jayasankar, Created at: 07-06-2025 01:17
 import 'package:flutter/material.dart';
 
-class MoviesView extends StatefulWidget {
-  const MoviesView({super.key});
+class MoviesScreen extends StatefulWidget {
+  const MoviesScreen({super.key});
 
   @override
-  State<MoviesView> createState() => _MoviesViewState();
+  State<MoviesScreen> createState() => _MoviesScreenState();
 }
 
-class _MoviesViewState extends State<MoviesView> {
+class _MoviesScreenState extends State<MoviesScreen> {
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
