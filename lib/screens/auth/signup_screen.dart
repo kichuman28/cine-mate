@@ -1,4 +1,5 @@
 // Created by: Adwaith Jayasankar, Created at: 07-06-2025 01:16
+import 'package:cine_mate/config/router.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -21,6 +22,8 @@ class _SignupScreenState extends State<SignupScreen> {
         email: _emailController.text.trim(),
         password: _passwordController.text.trim(),
       );
+      if (!mounted) return;
+      Navigator.pushReplacementNamed(context, AppRoutes.login);
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Signup failed: $e")));
@@ -52,7 +55,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 ? const CircularProgressIndicator()
                 : ElevatedButton(onPressed: _signup, child: const Text("Signup")),
             TextButton(
-              onPressed: () => Navigator.pushReplacementNamed(context, '/login'),
+              onPressed: () => Navigator.pushReplacementNamed(context, AppRoutes.login),
               child: const Text("Already have an account? Login"),
             )
           ],
